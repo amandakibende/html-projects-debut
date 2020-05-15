@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crèpe lovers</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: #f8e1f4;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        margin: 200px;
+        margin-top: 10px;
+      }
+
+      button {
+        border: 1px solid #b5076b;
+        background-color: #f8e1f4;
+        color: navy;
+        font-size: 25px;
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+        transition: all 100ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        color: orangered;
+        background-color: papayawhip;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Crèpe lovers 🥞, love you 💜</h1>
+
+    <h2><em>What's good crèpe</em></h2>
+    <p>
+      In France and Belgium, crêpes are traditionally served on Candlemas (La
+      Chandeleur), February 2nd. This day was originally Virgin Mary's Blessing
+      Day but became known in France as "Le Jour des Crêpes" (literally
+      translated "The Day of the Crêpes", and sometimes called colloquially as
+      "Avec Crêpe Day", "National Crêpe Day", or "day of the Crêpe"), referring
+      to the tradition of offering crêpes. The belief was that catching the
+      crêpe with a frying pan after tossing it in the air with your right hand
+      while holding a gold coin in your left hand would cause you to become rich
+      that year. The roundness and golden color of a crêpe resembles the sun and
+      its rays. This symbolism also applies to the coin held in the person's
+      hand.
+    </p>
+    <p>
+      source :
+      <a href="https://en.wikipedia.org/wiki/Cr%C3%AApe" target="_blank">
+        wikipedia</a
+      >
+    </p>
+
+    <h3><em>How to make the perfect one?</em></h3>
+
+    <p>
+      Ingredients : Flour, 6 eggs, Milk <em>(almond milk is the best)</em>,
+      Brown sugar, coconut oil and water.
+    </p>
+    <p>
+      Crèpes is about sharing and having a good moment so what's best than 2
+      crèpes?
+    </p>
+    <p>-A recipe for 30 crèpes, duh!-</p>
+    <ol>
+      <li>In a big bowl you are going to pour 2/3 of your flour pack.</li>
+      <li>Then break the neck out of your 6 best eggs</li>
+      <li>Add the entire bottle of your chosen milk</li>
+      <li>For the flavour, pour 2 cups of coconut water</li>
+      <li>Add 1 cup of coconut oil</li>
+      <li>Optional : Brown sugar</li>
+      <li>Mix your artpiece in the making!</li>
+    </ol>
+
+    <p><strong>NB:</strong> Family and beginner friendly</p>
+
+    <h4>You are a chef now!</h4>
+    <p>
+      After the mixing, and making you can now enjoy your crèpes as you wish my
+      dear!
+    </p>
+
+    <button>Share your masterpiece</button>
+
+    <p><strong>This page is a test. Roger that?</strong></p>
+    <img
+      src="https://assets.afcdn.com/recipe/20180713/81162_w1024h768c1cx1944cy2592cxt0cyt0cxb3888cyb5184.jpg"
+      alt="a plate of crepes"
+      width="300"
+    />
+  </body>
+  <script>
+    function Piece() {
+      let name = prompt("What's your name?");
+      let email = prompt("What's your email?");
+      let h1 = document.querySelector("h1");
+      h1.innerHTML =
+        "Welcome " + name + ", we'll reach you as soon as possible!";
+    }
+
+    let buttonPiece = document.querySelector("button");
+    buttonPiece.addEventListener("click", Piece);
+  </script>
+</html>

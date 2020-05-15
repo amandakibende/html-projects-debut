@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>funtest</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: cadetblue;
+      }
+      h1 {
+        color: chocolate;
+        font-size: 45px;
+      }
+      button {
+        padding: 30px 50px;
+        border: 3px solid palevioletred;
+        color: cornflowerblue;
+        background-color: antiquewhite;
+        border-radius: 15px;
+      }
+      button:hover {
+        color: antiquewhite;
+        background-color: cornflowerblue;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><em>SheRo</em></h1>
+    <p>Amanda is going to be the best in her field</p>
+    <button>WATCH ME!</button>
+    <script>
+      function watchMe() {
+        let name = prompt("What's your name cutie pie?");
+        let email = prompt("And what is your email?");
+
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "<em>Thank you</em>" + " " + name + ", see you soon!";
+        
+      }
+      
+      let watchMeButton = document.querySelector("button");
+
+      watchMeButton.addEventListener("click",watchMe);
+      </script>
+    </script>
+  </body>
+</html>
